@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .menu-active {
+    @apply bg-blue-50 border-l-[5px] border-transparent border-primary text-primary font-poppins;
+  }
+  .sidebar-container {
+    @apply duration-300 h-screen bg-gray-50 relative pt-5  border-r-2 border-[#C7C7C7] font-poppins;
+  }
+  .sidebar-link {
+    @apply flex items-center gap-x-4 px-4 cursor-pointer rounded-sm font-normal text-[20px] font-poppins;
+  }
+  .modal-done-btn {
+    @apply bg-primary text-white active:bg-primary font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 font-poppins;
+  }
+  .modal-cancle-btn {
+    @apply bg-black text-white active:bg-black font-bold uppercase text-sm px-6 py-3 rounded shadow hover:shadow-lg outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150 font-poppins;
+  }
+  .tab-design {
+    @apply !text-[20px] px-5 py-3 shadow-lg rounded block leading-normal font-poppins;
+  }
+}

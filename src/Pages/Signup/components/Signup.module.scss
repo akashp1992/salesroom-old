@@ -1,0 +1,31 @@
+
+body{
+    // background-color: #ecedf0;
+}
+
+.signup{
+    background-color: #ecedf0 !important;
+   
+}
+
+
+// .formbox {
+//     background: #fff;
+//     min-height: 62vh;
+//     border-radius: 15px;
+//     padding: 15px 30px;
+//     margin: 0 26%;
+    
+// }
+
+.formbox {
+    background: #fff;
+    min-height: 62vh;
+    border-radius: 15px;
+    padding: 15px 30px;
+    margin: 0 26%;
+    box-shadow: 1px 2px 4px 0px grey;
+    .body {
+      min-height: 40vh;
+    }
+  }

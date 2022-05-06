@@ -1,0 +1,422 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+p {
+  font-size: 16px;
+}
+
+.btn-blue {
+  background: #174fba !important;
+  border-radius: 50px !important;
+  padding: 8px 20px !important;
+  color: #fff !important;
+  font-weight: 600;
+  text-transform: capitalize !important;
+}
+._2pGos._hsN1w {
+  background: #174fba;
+  border-radius: 50px;
+  padding: 8px 26px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-black {
+  background: #000000;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: 600;
+}
+
+._1Lo2h {
+  margin-bottom: 40px !important;
+  li {
+    ._2JvrO {
+      display: none;
+    }
+    ._2kL0S {
+      display: none;
+    }
+  }
+  ._2Jtxm::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    height: 10px;
+    width: 100%;
+    right: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
+    // background: linear-gradient(to left, #e7eaf3 50%, #b14d4d 50%);
+    background: linear-gradient(to left, #ffffff 50%, #174fba 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: background-position 200ms ease-in-out;
+  }
+}
+
+._3uApM {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 1rem;
+  position: relative;
+  top: -120px;
+  // padding: 0 5%;
+  margin: 0 29%;
+}
+._53Ji7 {
+  padding: 0rem !important;
+}
+
+.formbox {
+  background: #fff;
+  min-height: 62vh;
+  border-radius: 15px;
+  padding: 15px 30px;
+  margin: 0 26%;
+  box-shadow: 1px 2px 4px 0px grey;
+  .body {
+    min-height: 40vh;
+  }
+}
+
+// Input
+// ====================
+
+input,
+select {
+  width: 100%;
+  height: 45px;
+  padding: 5px 15px;
+  display: block;
+  margin-bottom: 14px;
+}
+.input-signup {
+  box-shadow: 0px 2px 3px 1px #8b8b8b;
+}
+.errormsg {
+  color: #fb2424;
+  font-size: 12px;
+  position: absolute;
+  margin-top: -13px;
+  font-weight: 400;
+}
+.loginError {
+  // color: #fb2424;
+  // font-size: 13px;
+  // position: absolute;
+  // margin-top: 70px;
+  // font-weight: 400;
+  // right: 410px;
+  margin-top: 72px;
+  margin-left: 45px;
+}
+
+.signup {
+  input,
+  select,
+  option {
+    border: 1px solid #174fba;
+    border-radius: 3px;
+  }
+
+  .ant-steps-item-process
+    > .ant-steps-item-container
+    > .ant-steps-item-content
+    > .ant-steps-item-title::after {
+    background-color: #ffffff;
+  }
+  .ant-steps-item-title::after {
+    position: absolute;
+    top: 16px;
+    left: 100%;
+    display: block;
+    width: 9999px;
+    height: 10px;
+    background: #ffffff;
+    content: "";
+  }
+  .ant-steps-item-wait
+    > .ant-steps-item-container
+    > .ant-steps-item-content
+    > .ant-steps-item-title::after {
+    background-color: #ffffff;
+  }
+  .ant-steps-item-process > .ant-steps-item-container > .ant-steps-item-icon {
+    background: #1890ff;
+    display: none;
+  }
+  // .ant-steps {
+  //   margin-bottom: 40px;
+  // }
+  .ant-steps-item-wait .ant-steps-item-icon > .ant-steps-icon {
+    color: rgba(0, 0, 0, 0.25);
+    display: none;
+  }
+  .error__feedback {
+    color: #fb2424;
+  }
+
+  .ant-steps-item-finish .ant-steps-item-icon > .ant-steps-icon {
+    display: none;
+  }
+  .ant-steps-item-icon {
+    width: 0;
+    height: 0;
+    margin: 0 0px 0 0;
+  }
+  .ant-steps-horizontal:not(.ant-steps-label-vertical) .ant-steps-item {
+    padding-left: 0px;
+  }
+  .ant-steps-item-title {
+    padding-right: 0px;
+  }
+
+  .ant-steps-item-finish
+    > .ant-steps-item-container
+    > .ant-steps-item-content
+    > .ant-steps-item-title {
+    margin-left: -2px;
+  }
+  .ant-steps-item-wait
+    > .ant-steps-item-container
+    > .ant-steps-item-content
+    > .ant-steps-item-title {
+    margin-left: -2px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .formbox {
+    margin: 0 20%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .formbox {
+    margin: 0 0%;
+  }
+}
+
+.uploadImage {
+  .currentColor {
+    color: #000000 !important;
+  }
+}
+
+// Material Ui
+
+.css-12i7wg6-MuiPaper-root-MuiDrawer-paper {
+  top: 57px;
+}
+
+.css-1191obr-MuiPaper-root-MuiAppBar-root,
+.css-19z1ozs-MuiPaper-root-MuiAppBar-root {
+  background-color: #fff;
+  color: #213cff;
+  margin-left: 0;
+  width: 100%;
+}
+
+.css-p55zm9-MuiButtonBase-root-MuiIconButton-root {
+  top: 72px;
+  background: white;
+  position: absolute;
+}
+.css-p55zm9-MuiButtonBase-root-MuiIconButton-root:hover {
+  z-index: 11111;
+  background: rgb(114, 114, 114);
+  .css-i4bv87-MuiSvgIcon-root {
+    color: #eeeeee;
+  }
+}
+// .css-78trlr-MuiButtonBase-root-MuiIconButton-root:hover {
+//   // z-index: -1;
+// }
+header {
+  .css-i4bv87-MuiSvgIcon-root {
+    color: #1890ff;
+  }
+}
+
+// Dashboard
+// ===================================
+// .tabs-btn {
+//   li {
+//     a {
+//       background-color: #e5e7eb;
+//       color: #1890fd;
+//       font-size: 15px;
+//       line-height: 1.75rem;
+//       font-weight: 600;
+//       padding: 5px 20px;
+//     }
+//     .active {
+//       background-color: #174fba;
+//       color: #fff;
+//     }
+//   }
+// }
+.tabs-btn {
+  li {
+    a {
+      color: #908787;
+      font-size: 15px;
+      line-height: 1.75rem;
+      font-weight: 600;
+      padding: 5px 20px;
+      box-shadow: none;
+      border-radius: 0;
+      font-weight: 700;
+    }
+    .active {
+      color: #174fba;
+      border-bottom: 2px solid #174fc9;
+    }
+  }
+}
+
+// Form
+// ====================================
+
+.form {
+  label {
+    font-size: 14px;
+    color: #908787;
+  }
+  .error {
+    color: #fb2424;
+    font-size: 12px;
+    margin-bottom: 0;
+    line-height: 20px;
+  }
+  textarea {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-variant: tabular-nums;
+    list-style: none;
+    font-feature-settings: "tnum", "tnum";
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    min-width: 0;
+    padding: 4px 11px;
+    color: rgba(0, 0, 0, 0.85);
+    font-size: 14px;
+    line-height: 1.5715;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #d9d9d9;
+    border-radius: 2px;
+    transition: all 0.3s;
+  }
+}
+
+.ant-steps-item-finish
+  > .ant-steps-item-container
+  > .ant-steps-item-content
+  > .ant-steps-item-title::after {
+  background-color: #174fba !important;
+}
+
+// Dashboard Side Menu
+.sidebar-container {
+  .menu-toggle {
+    background: #bdbdbd;
+    width: -moz-fit-content;
+    width: fit-content;
+    color: white;
+    padding: 2px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 3px 0px #00000094;
+  }
+}
+
+// MultiFiles Uploader Dropzone
+
+.dzu-dropzone {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+
+  progress {
+    display: none;
+  }
+  .dzu-previewContainer {
+    background: #ecedf0;
+    background-image: url("../images/icon/file-icon.png");
+    background-repeat: no-repeat;
+    background-size: 65px;
+    background-position: 50%, 100%;
+    height: 160px;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 1px 3px 0px #0000007a;
+
+    .dzu-previewImage {
+      border-radius: 10px;
+      max-height: 138px;
+    }
+    .dzu-previewFileName {
+      position: relative;
+      top: 55px;
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+  .dzu-inputLabelWithFiles,
+  .dzu-inputLabel {
+    background: #ecedf0;
+    background-image: url("../images/icon/plus.png");
+    background-repeat: no-repeat;
+    background-size: 42px;
+    background-position: 50%, 100%;
+    height: 160px;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 2px 1px 3px 0px #0000007a;
+    font-size: 0px;
+    width: 160px;
+    cursor: pointer;
+    .dzu-input {
+      display: none;
+    }
+  }
+}
+
+.modal-done-btn {
+  background-color: #174fba;
+}
+.modal-cancle-btn {
+  background-color: #000000;
+}
+
+// selected modal
+.css-b62m3t-container {
+  position: relative;
+  box-sizing: border-box;
+  border: 0;
+  background: none;
+  margin-bottom: 0;
+  margin-top: -22px;
+}
+
+.css-6j8wv5-Input {
+  margin: 0px !important;
+  padding-bottom: 0px !important;
+  padding-top: 0px !important;
+}
+.swal2-styled.swal2-confirm{
+  background:rgb(221, 51, 51) !important;
+}
+.swal2-styled.swal2-cancel{
+  background:#174FBA !important;
+}
