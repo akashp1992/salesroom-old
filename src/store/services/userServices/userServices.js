@@ -9,7 +9,7 @@ const userService = createApi({
   endpoints: (builder) => ({
     getAllUsers: builder.query({
       query: (businessId) => ({
-        url: `users/business/`,
+        url: `users/business/{businessId}`,
         method: "GET",
         params: businessId,
       }),
@@ -17,7 +17,7 @@ const userService = createApi({
     }),
     getUserById: builder.query({
       query: (userId) => ({
-        url: `users`,
+        url: `users/{userId}`,
         method: "GET",
         params: userId,
       }),
@@ -45,7 +45,7 @@ const userService = createApi({
         method: "POST",
         body: passwordInfo,
       }),
-      invalidatesTags: ["users"],
+      invalidatesTags: (result, error) => [{ type: 'users', error }],
     }),
   }),
 });

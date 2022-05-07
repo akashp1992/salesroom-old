@@ -8,8 +8,8 @@ const documentServices = createApi({
   }),
   endpoints: (builder) => ({
     uploadDocument: builder.mutation({
-      query: (uploadFile) => ({
-        url: "documents/upload",
+      query: (...uploadFile) => ({
+        url: `documents/upload?businessId=43652f2d-7324-43be-bd81-34f2af6e34a6&category=CATEGORY`,
         method: "POST",
         body: uploadFile,
       }),

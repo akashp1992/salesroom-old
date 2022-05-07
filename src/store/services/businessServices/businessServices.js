@@ -23,8 +23,8 @@ const businessServices = createApi({
       providesTags: ["business"],
     }),
     updateBusiness: builder.mutation({
-      query: ({ businessId, ...rest }) => ({
-        url: `business/${businessId}`,
+      query: (rest) => ({
+        url: `business`,
         method: "PUT",
         body: rest,
       }),

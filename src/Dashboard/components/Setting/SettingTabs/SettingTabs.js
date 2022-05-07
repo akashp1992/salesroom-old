@@ -122,7 +122,7 @@ const Tabs = () => {
             <div
               className={
                 openTab === "Language"
-                  ? "grid grid-cols-1 md:grid-cols-2 gap-6 mt-6"
+                  ? "grid grid-cols-1 gap-6 mt-6"
                   : "hidden"
               }
               id="link1"
